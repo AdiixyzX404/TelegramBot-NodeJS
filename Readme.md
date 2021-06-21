@@ -28,14 +28,15 @@
 Edit the required value in `config.json`. You can get the apikey at [`LoL Human Rest API`](http://api.lolhuman.xyz/). And get bot token at [`@BotFather`](http://t.me/BotFather).
 ```json
 { 
-    "usernameOwner": "BryanRfly",
-    "apikey": "",
-    "xkey": "",
-    "bot_token": "",
-    "owner": "LoL Human",
-    "ownerLink": "https://t.me/LoLHumen",
-    "version": "1.0.0",
-    "prefix": "/"
+    "usernameOwner": "BryanRfly", //ganti dengan username telegram owner!
+    "apikey": "", //ganti dengan apikey lol-human mu!
+    "xkey": "", //ganti dengan apikey xteam mu!
+    "bot_token": "", //ganti dengan token bot mu!
+    "owner": "LoL Human", //ganti dengan nama owner bot!
+    "ownerLink": "https://t.me/LoLHumen", //ganti dengan link telegram mu!
+    "version": "1.0.0", //terserah lu elite mau lu ubah apa gak
+    "prefix": "/" //terserah lu elite mau lu ubah apa gak,
+    "IdO": "73647463846" //ganti dengan id telegrammu!, untuk mendapatkan id tele mu gunakan bot mu /getid
 }
 ```
 
