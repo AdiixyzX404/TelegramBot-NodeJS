@@ -22,6 +22,7 @@ const _ban = JSON.parse(fs.readFileSync('./lib/banned.json'))
 const hem = '```'
 const { 
     usernameOwner, 
+    IdO,
     xkey, 
     apikey,
     bot_token,
@@ -1420,7 +1421,17 @@ Nama Pengguna Kamu Akan Hilang Dari Database Bot Apa Bila Bot Sedang Perbaikan A
                               case 'status':
                               ppl = `status: ${isUser?'User':'Bukan User'}`
                               reply(ppl)
-                              break
+                              break 
+		case 'report':
+			if (!query) return reply('Input Teks') 
+			if (!isUser) return reply(mess.ser)
+			try { 
+				await bot.telegram.sendMessage(IdO, query)
+				reply('Masalahmmu Telah Sampai Ke Owner Bot, Owner Akan Segera Menanganinya!')
+			} catch(e) { 
+				reply('' + e)
+			} 
+			break
                               case 'getid':
                               await reply(`Id Mu: ${user.id}`)
                               break
