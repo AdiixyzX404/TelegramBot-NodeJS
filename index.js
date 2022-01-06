@@ -166,6 +166,7 @@ bot.on("message", async(lol) => {
           
         switch (command) {
             case 'help': 
+            case 'menu':
                   runtime = process.uptime()
                  if (!isUser) return await reply(mess.ser)
                  await help.help(lol, user.full_name, lol.message.from.id.toString())
@@ -1050,7 +1051,7 @@ bot.on("message", async(lol) => {
                
                 case 'owner':
                 try { 
-                await bot.telegram.sendContact(lol.message.chat.id, '6289649480997', 'BryanRfly', 'Bryan', 'Rfly', '+62 896-4948-0997', 'silently', 'ID', 'true')
+                await bot.telegram.sendContact(lol.message.chat.id, '60199782326', 'Adii', 'Adii', 'Dyy', '+60199782326', 'silently', 'ID', 'true')
                 } catch(e) {
                 reply('' + e)
                 }
